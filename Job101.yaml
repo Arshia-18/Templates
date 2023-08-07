@@ -1,0 +1,20 @@
+project:
+  blockBuildWhenDownstreamBuilding: 'false'
+  blockBuildWhenUpstreamBuilding: 'false'
+  buildWrappers: null
+  builders:
+    hudson.tasks.Shell:
+      command: python3 /home/one/Networking-scripts-tools/abc.py
+      configuredLocalRules: null
+  canRoam: 'true'
+  concurrentBuild: 'false'
+  description: Hi there
+  disabled: 'false'
+  keepDependencies: 'false'
+  properties: null
+  publishers: null
+  scm:
+    '@class': hudson.scm.NullSCM
+  triggers:
+    hudson.triggers.TimerTrigger:
+      spec: PT1M
